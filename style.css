@@ -1,82 +1,81 @@
-body{
-	font-family: 'Open Sans',sans-serif;
-	background-color: black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Barlow', sans-serif;
+    background: #E0E0E0;
+    color: #424242;
+    font-weight: 300;
 }
 #container{
 	width: 1000px;
 	height: 550px;
-	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(bgImg.jpg);
 	margin: 20px auto;	
 }
 #calculator{
-	width: 320px;
-	height: 520px;
-	background-color: #eaedef;
-	margin: 0 auto;
-	top: 20px;
-	position: relative;
-	border-radius: 5px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	width: 100%;
+    max-width: 300px;
+    height: 550px;
+    background: #F5F5F5;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 0px 14px 76px -4px rgba(189,189,189,1);
 }
 #result{
-	height: 120px;
+	text-align: right;
+    height: 200px;
 }
 #history{
-	text-align: right;
-	height: 20px;
-	margin: 0 20px;
-	padding-top: 20px;
-	font-size: 15px;
-	color: #919191;
+    font-size: 20px;
+    position: relative;
+    top: 90px;
+    right: 20px;
 }
 #output{
-	text-align: right;
-	height: 60px;
-	margin: 10px 20px;
-	font-size: 30px;
+	position: relative;
+    top: 110px;
+    right: 20px;
+    font-weight: 600;
+    font-size: 35px;
 }
 #keyboard{
-	height: 400px;
+	height: 350px;
+    border-radius: 0 0 15px 15px;
+    background: #FAFAFA;
+    padding: 30px 25px 10px 25px;
+    text-align: center;
+    color: #001833;
 }
 .operator, .number, .empty{
-	width: 50px;
-	height: 50px;
-	margin: 15px;
-	float: left;
-	border-radius: 50%;
-	border-width: 0;
-	font-weight: bold;
-	font-size: 15px;
+    border: none;
+    border-radius: 99px;
+    font-size: 20px;
+    padding: 10px 15px;
+    margin: 10px 5px 0 0;
+    width: 45px;
+    height: 45px;
+    background: none;
+    outline: none;
+    transition: all .3s;
 }
 .number, .empty{
-	background-color: #eaedef;
+	background-color: #FAFAFA;
 }
 .number, .operator{
 	cursor: pointer;
 }
-.operator:active, .number:active{
-	font-size: 13px;
+.number:hover , .operator:hover {
+    background: #EEEEEE;
 }
-.operator:focus, .number:focus, .empty:focus{
-	outline: 0;
+.top .opr, #time, #minus, #equal, #plus {
+    color: #465064;
 }
-button:nth-child(4){
-	font-size: 20px;
-	background-color: #20b2aa;
+.numbers {
+    margin: auto 20px;
 }
-button:nth-child(8){
-	font-size: 20px;
-	background-color: #ffa500;
-}
-button:nth-child(12){
-	font-size: 20px;
-	background-color: #f08080;
-}
-button:nth-child(16){
-	font-size: 20px;
-	background-color: #7d93e0;
-}
-button:nth-child(20){
-	font-size: 20px;
-	background-color: #9477af;
+.equal {
+    background: #2a6dff !important;
+    color: #fff !important;
 }
